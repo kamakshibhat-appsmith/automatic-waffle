@@ -1,0 +1,8 @@
+UPDATE bank."bankers" SET
+		"lastname" = '{{update_form.fieldState.lastname.isVisible ? update_form.formData.lastname : update_form.sourceData.lastname}}',
+		"firstname" = '{{update_form.fieldState.firstname.isVisible ? update_form.formData.firstname : update_form.sourceData.firstname}}',
+    "address" = '{{update_form.fieldState.address.isVisible ? update_form.formData.address : update_form.sourceData.address}}',
+		"city" = '{{update_form.fieldState.city.isVisible ? update_form.formData.city : update_form.sourceData.city}}',
+		"phone" = '{{update_form.fieldState.phone.isVisible ? update_form.formData.phone : update_form.sourceData.phone}}',
+		"namescheduletable" = '{{update_form.fieldState.namescheduletable.isVisible ? update_form.formData.namescheduletable : update_form.sourceData.namescheduletable}}'
+WHERE "bankerid" = {{data_table.selectedRow.bankerid}};

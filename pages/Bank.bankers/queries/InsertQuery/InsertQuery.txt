@@ -1,0 +1,16 @@
+INSERT INTO bank."bankers" (
+	"bankerid",
+	"lastname",
+	"firstname",
+	"address",
+	"city",
+	"phone",
+	"namescheduletable")
+VALUES (
+	'{{insert_form.formData.bankerid}}',
+	'{{insert_form.formData.lastname}}',
+	'{{insert_form.formData.firstname}}',
+	'{{insert_form.formData.address}}',
+	'{{insert_form.formData.city}}',
+	'{{insert_form.formData.phone}}',
+	'{{insert_form.formData.namescheduletable}}');
